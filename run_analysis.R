@@ -2,6 +2,15 @@
 library(data.table)
 library(dplyr)
 
+#If the files are not downloaded uncomment the codeblock below
+
+# #fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+# #download.file(fileUrl,destfile="./DataSet.zip")
+#
+# #Unzip dataSet to /data directory
+# #unzip(zipfile="./Dataset.zip")
+
+# The main program
 # Reading the data and storing in table
 features <- read.table("./UCI HAR Dataset/features.txt", header = FALSE)
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)
